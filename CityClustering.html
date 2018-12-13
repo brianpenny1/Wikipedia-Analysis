@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>CityCluster</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.1.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.1.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="5f5cebe6-160e-41e7-981c-204ac9b6b9b2"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1647">
+          {"157c381c-b065-4209-b392-d9513e63cefd":{"roots":{"references":[{"attributes":{},"id":"1541","type":"WheelZoomTool"},{"attributes":{},"id":"1576","type":"Selection"},{"attributes":{"overlay":{"id":"1551","type":"BoxAnnotation"}},"id":"1542","type":"BoxZoomTool"},{"attributes":{},"id":"1543","type":"ResetTool"},{"attributes":{"callback":null},"id":"1544","type":"TapTool"},{"attributes":{},"id":"1527","type":"LinearScale"},{"attributes":{"callback":null,"renderers":"auto","tooltips":[["Name","@Name"],["Mean Daily Views","@Mean_Daily_Views{int}"],["Median Daily Views","@Median{int}"],["Standard Deviation","@Standard_Deviation{int}"],["Highest Daily Views","@Highest_Daily_Views{int}"]]},"id":"1519","type":"HoverTool"},{"attributes":{},"id":"1545","type":"SaveTool"},{"attributes":{},"id":"1525","type":"LinearScale"},{"attributes":{},"id":"1570","type":"BasicTickFormatter"},{"attributes":{"callback":null,"overlay":{"id":"1557","type":"BoxAnnotation"}},"id":"1546","type":"BoxSelectTool"},{"attributes":{"callback":null},"id":"1523","type":"DataRange1d"},{"attributes":{"below":[{"id":"1529","type":"LinearAxis"}],"left":[{"id":"1534","type":"LinearAxis"}],"plot_height":1400,"plot_width":900,"renderers":[{"id":"1529","type":"LinearAxis"},{"id":"1533","type":"Grid"},{"id":"1534","type":"LinearAxis"},{"id":"1538","type":"Grid"},{"id":"1551","type":"BoxAnnotation"},{"id":"1557","type":"BoxAnnotation"},{"id":"1565","type":"GlyphRenderer"}],"title":{"id":"1568","type":"Title"},"toolbar":{"id":"1547","type":"Toolbar"},"x_range":{"id":"1521","type":"DataRange1d"},"x_scale":{"id":"1525","type":"LinearScale"},"y_range":{"id":"1523","type":"DataRange1d"},"y_scale":{"id":"1527","type":"LinearScale"}},"id":"1520","subtype":"Figure","type":"Plot"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"radius":{"units":"data","value":0.2},"x":{"field":"cluster"},"y":{"field":"Position"}},"id":"1564","type":"Circle"},{"attributes":{"callback":null},"id":"1521","type":"DataRange1d"},{"attributes":{"plot":null,"text":""},"id":"1568","type":"Title"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1551","type":"BoxAnnotation"},{"attributes":{"formatter":{"id":"1570","type":"BasicTickFormatter"},"plot":{"id":"1520","subtype":"Figure","type":"Plot"},"ticker":{"id":"1530","type":"BasicTicker"}},"id":"1529","type":"LinearAxis"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1557","type":"BoxAnnotation"},{"attributes":{},"id":"1530","type":"BasicTicker"},{"attributes":{"data_source":{"id":"1561","type":"ColumnDataSource"},"glyph":{"id":"1563","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1564","type":"Circle"},"selection_glyph":null,"view":{"id":"1566","type":"CDSView"}},"id":"1565","type":"GlyphRenderer"},{"attributes":{"plot":{"id":"1520","subtype":"Figure","type":"Plot"},"ticker":{"id":"1530","type":"BasicTicker"}},"id":"1533","type":"Grid"},{"attributes":{"callback":null,"data":{"Coef_Var":{"__ndarray__":"d4HZqmjWvz89L/MqYNzVP6nvLkS5RABAhJUrknQ0EUCpGIMBctD7P3sD5zuWXtM/U4M9appU0T/t5sGteZXVP8IEzIbUENU/74DDc+u9vT+YMFuNPu/HPydABRD7BME/k16u6M8iwD/9w/P1PoTIP9K6HHdNGMc/SYaGBmmp2T8WSMavP0vAP6zFBrN508U/Pac07hTtwT/rh/rpymPXPzeQ21IM+Mo/xXB3+qfSwz+P6luWTYjVP6vpLe/qRcM/sFT/BAf+/T/vpDkgEuHoP1ut3zsL+9Y/ZoTEJnnIxD92JyPZdJfCP0k2jqZv7O4/sBVll2UbzT/g4XBSmYfrP4mCOU1z19o/ymKucKYpxT8+KIrgWwjJP5ENJAfIx8s/0iI+H3RwvT93TieGOsvJP+3aKapyCNo/EmUixpUPyz+3fv/jQbPCPx2Gs/pCdeA/4IBxGAB47D+Zt4WIW5vSP71LZSGvmcM/Djt/O9TrwT8Z9JwWOyjKP8ut6U36bMc/EdkGO3PswT9NObJaDszRP7WPJe2PNLo/w7Iasx0lxD/LovrmdpjCP1Z/QbqQT8U/DQfJC3hkuj8wxX3Jp67NP2T4ycFDPtc//6jRGLGTyT+8aPKP6JTIP0b42uq+6Os/X8+m5cLwyj8=","dtype":"float64","shape":[61]},"Color":["green","green","blue","blue","blue","black","black","black","black","orange","orange","aqua","aqua","aqua","brown","brown","purple","purple","turquoise","turquoise","turquoise","red","red","red","gray","gray","olive","olive","olive","olive","olive","navy","navy","pink","pink","pink","pink","pink","pink","pink","pink","maroon","maroon","darkkhaki","darkkhaki","orangered","orangered","orangered","orangered","green","green","green","blue","blue","blue","black","black","orange","orange","aqua","aqua"],"Highest_Daily_Views":[11224,14486,327285,249288,75614,9536,9407,61696,59641,41259,6790,5573,11890,14510,8029,44502,8555,9344,21878,36204,12285,11596,23159,8113,248056,45711,11788,9996,15033,175963,76930,20487,39992,19417,17511,24080,9884,13933,40600,16574,23307,14347,43985,47104,12341,10181,6685,7626,9708,4802,10769,16831,7517,26502,20203,2298,9023,12851,11229,24678,6451],"Mean_Daily_Views":{"__ndarray__":"D1cj/9iwtUD2KwVq/S+ZQMEgSppF4LJAf6VArd9/o0BkrHhUbnycQPcS2ktoCJxAGSselRu0n0Dyj7HisczDQBoS83YG471A41G5AY6tz0AmtJfQ3gigQEDGikfl56FA/xgrHpUasUAelRvgHBCvQHoiGETJ/KhAw+7zXRv/tEBUh6uRf2KnQJQ0C7vPeKdAVG6Ac2petkCo9SsFajSqQFnxqNwAJKhA2H2+a8tWsEBoL6G9BO+uQFyN/GOsPqlAchzHcdwyuEDFvJ0hMb6jQO/zXVumdJpA9UQwiBIDrEBwTh2uxr20QAZR0izsAb5AvmvL9OQTyUDgnDpcjf6VQMPu812b37JAJrSX0B5fuUCmJ4JBFBqyQL5ry/SEULNAQpQ0C3uetUB/pUCt39umQBLzdobELKlAewntJbSPqUC0l9BeQo25QKDWrxSoEZ1AmZ4IBlH6oEDiauQfI2u1QGzL9EQwN7VA41G5Ac7ipkDzdobEvAmXQLAUqPWrCaJAchzHcRxsqkDezpCYt+OGQMomm2yydLJAkZi3M2QAskCp3ADnVIqvQHMDnFNHh79AFnaf7/qDw0DKJptsstmBQPx815bpQZBA4Jw6XI2IsEDJP8aKx36kQIMoaRZ2DZdArkb+MdZnoEA=","dtype":"float64","shape":[61]},"Median":{"__ndarray__":"AAAAAIBMtUAAAAAAAACYQAAAAAAAQbBAAAAAAABAnEAAAAAAADSZQAAAAAAA7JpAAAAAAAAMnkAAAAAAwBbDQAAAAACA87xAAAAAAIBzz0AAAAAAAIyfQAAAAAAAsqFAAAAAAAAIsUAAAAAAAHKuQAAAAAAAdKhAAAAAAAD9s0AAAAAAADmnQAAAAAAAIqdAAAAAAIA1tkAAAAAAAKSpQAAAAAAAladAAAAAAADFr0AAAAAAAButQAAAAAAAoahAAAAAAICrskAAAAAAAJyhQAAAAAAABplAAAAAAABiq0AAAAAAAIe0QAAAAAAAzrtAAAAAAABiyEAAAAAAAJKSQAAAAAAAfrFAAAAAAAC6uEAAAAAAgHqxQAAAAAAABLNAAAAAAICLtUAAAAAAAC2mQAAAAAAAUqhAAAAAAAD5qEAAAAAAgEC5QAAAAAAAxphAAAAAAABUn0AAAAAAAF+0QAAAAAAA47RAAAAAAAC1pkAAAAAAAJqWQAAAAAAAoaFAAAAAAABNqkAAAAAAAESGQAAAAAAAXrJAAAAAAIDlsUAAAAAAACCvQAAAAACADL9AAAAAAIBLw0AAAAAAAECBQAAAAAAABI9AAAAAAADrr0AAAAAAAC2kQAAAAAAAkJRAAAAAAACGn0A=","dtype":"float64","shape":[61]},"Name":["Amsterdam","Rotterdam","Saint_Petersburg","Kyoto","Hanoi","Riyadh","Tehran","Dubai","Mumbai","New_York_City","Cairo","Warsaw","Shanghai","Beijing","Madrid","Barcelona","Milan","Florence","Tokyo","Munich","Athens","Vienna","Chennai","New_Delhi","Jerusalem","Tel_Aviv","Baghdad","Dublin","Rome","Paris","London","Ankara","Istanbul","Toronto","Detroit","Vancouver","Seattle","Stockholm","Dallas","Bangkok","San_Francisco","Havana","Alexandria","Philadelphia","Boston","Glasgow","Riga","Belfast","Edinburgh","Avignon","Prague","Venice","Sydney","Chicago","Los_Angeles","Bukhara","Samarkand","Moscow","Buenos_Aires","Zagreb","Belgrade"],"Position":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60],"Standard_Deviation":{"__ndarray__":"rKXk1KeUhUCt7JLt8zSBQBorr1NZMcNA82BBUMv3xECNhQxhi8KoQHIPSzva94BAhsCla4ArgUAimx5ForWqQEEIOz+0rKNA/Txu1UpxnUAK5C58g/x3QDHtH432C3NARkOw28s/gUCCESk9dcyHQEIyK72qCIJAlqhIk3XWoECByGNcetB3QEnpmjBmAoBAG3CS5sQPiUD2pS+GZCeTQI2Z+QVhWIRAXrGJRzA+hEAeXRTxndCUQFXvJKy9aH5AAjjLyzCuxkB+HhCjArOeQABvRqG+/4JAeBh/1mgxgkAKBEgA1hmIQB1LqkqE/7xAFqJ25H/PpkAGTeyL+uuSQGaHrzKBqZ9AENolD3LHkECnvdiiNFKMQMFN7KSFxJBAyWhopJjjg0AVyqdg82yCQOUjvRMFe5RAyjvV/7KdhUDKLCk7MN2NQDt9FuKy5o1AV0AsRGM1nkBWXT/wf+iYQPssXkdR/YlAHiTSpU2ieUAOpN4V4NRyQP+m0KjCaHpAyTD4JleZfUCml/P/3nVpQHqo4zhDOn5AyB+Vkj+qhkByH/wGFlSCQH+aOF8r/5RAaFz7iIEYkECu3hsFt45gQGq46AoEnndASjYcc/ptikDSAJ7s6Xx/QLiHKMQGG5RAxWqpdJmfe0A=","dtype":"float64","shape":[61]},"cluster":{"__ndarray__":"AQAAAAEAAAACAAAAAgAAAAIAAAADAAAAAwAAAAMAAAADAAAABAAAAAQAAAAFAAAABQAAAAUAAAAGAAAABgAAAAcAAAAHAAAACAAAAAgAAAAIAAAACQAAAAkAAAAJAAAACgAAAAoAAAALAAAACwAAAAsAAAALAAAACwAAAAwAAAAMAAAADQAAAA0AAAANAAAADQAAAA0AAAANAAAADQAAAA0AAAAOAAAADgAAAA8AAAAPAAAAEAAAABAAAAAQAAAAEAAAABEAAAARAAAAEQAAABIAAAASAAAAEgAAABMAAAATAAAAFAAAABQAAAAVAAAAFQAAAA==","dtype":"int32","shape":[61]},"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]},"selected":{"id":"1576","type":"Selection"},"selection_policy":{"id":"1575","type":"UnionRenderers"}},"id":"1561","type":"ColumnDataSource"},{"attributes":{"source":{"id":"1561","type":"ColumnDataSource"}},"id":"1566","type":"CDSView"},{"attributes":{"formatter":{"id":"1572","type":"BasicTickFormatter"},"plot":{"id":"1520","subtype":"Figure","type":"Plot"},"ticker":{"id":"1535","type":"BasicTicker"}},"id":"1534","type":"LinearAxis"},{"attributes":{},"id":"1535","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"1520","subtype":"Figure","type":"Plot"},"ticker":{"id":"1535","type":"BasicTicker"}},"id":"1538","type":"Grid"},{"attributes":{"fill_color":{"field":"Color"},"line_color":{"value":"#1f77b4"},"radius":{"units":"data","value":0.2},"x":{"field":"cluster"},"y":{"field":"Position"}},"id":"1563","type":"Circle"},{"attributes":{},"id":"1572","type":"BasicTickFormatter"},{"attributes":{},"id":"1575","type":"UnionRenderers"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1519","type":"HoverTool"},{"id":"1539","type":"CrosshairTool"},{"id":"1540","type":"PanTool"},{"id":"1541","type":"WheelZoomTool"},{"id":"1542","type":"BoxZoomTool"},{"id":"1543","type":"ResetTool"},{"id":"1544","type":"TapTool"},{"id":"1545","type":"SaveTool"},{"id":"1546","type":"BoxSelectTool"}]},"id":"1547","type":"Toolbar"},{"attributes":{},"id":"1539","type":"CrosshairTool"},{"attributes":{},"id":"1540","type":"PanTool"}],"root_ids":["1520"]},"title":"Bokeh Application","version":"1.0.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1647').textContent;
+                  var render_items = [{"docid":"157c381c-b065-4209-b392-d9513e63cefd","roots":{"1520":"5f5cebe6-160e-41e7-981c-204ac9b6b9b2"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
